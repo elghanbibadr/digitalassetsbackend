@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "domains",
+  "info": {
+    "singularName": "domain",
+    "pluralName": "domains",
+    "displayName": "Domain",
+    "description": "Domain marketplace listings"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "json"
+    },
+    "length": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "extension": {
+      "type": "string"
+    },
+    "listingType": {
+      "type": "enumeration",
+      "enum": ["buy-now", "make-offer", "lease", "lease-to-own"]
+    },
+    "onSale": {
+      "type": "boolean",
+      "default": true
+    },
+    "logo": {
+      "type": "string"
+    }
+  }
+}
