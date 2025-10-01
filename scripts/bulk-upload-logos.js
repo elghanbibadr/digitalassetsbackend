@@ -11,7 +11,7 @@ const LOGOS_FOLDER = './logos'; // Relative to Strapi root
 const BATCH_SIZE = 3;
 
 // Complete manual mappings (all 919 images)
-export const MANUAL_MAPPINGS = {
+ const MANUAL_MAPPINGS = {
   'image1.png': 'insurancecards.com',
   'image2.png': 'dubaisportingclays.com',
   'image3.png': 'denverclassifieds.com',

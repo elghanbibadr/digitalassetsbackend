@@ -17,7 +17,42 @@ Icon
 
 *~
 
+# Dependencies
+node_modules/
 
+# Build
+build/
+dist/
+.cache/
+
+# Database - IMPORTANT
+*.db
+*.sqlite
+*.sqlite3
+.tmp/
+data.db
+
+# Uploads - Can be large
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Strapi
+.strapi/
+.strapi-updater.json
+exports/
 ############################
 # Windows
 ############################
