@@ -439,7 +439,7 @@ export interface ApiDomainDomain extends Struct.CollectionTypeSchema {
       'api::domain.domain'
     > &
       Schema.Attribute.Private;
-    logo: Schema.Attribute.String;
+    logo: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
